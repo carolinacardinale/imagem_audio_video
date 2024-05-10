@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trabalhando com imagens responsivas, áudio e vídeo</h1>
+    <p>Imagens responsivas</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="300.png 300w" type="image/png">
+        <source media="(max-width:1050px)" srcset="1000.png 1050w" type="image/png">
+        <img src="./assets/imagem.png">
+    </picture>
+
+    <p>Áudio</p>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="./assets/audio.mp3" type="">
+    </audio>
+
+    <p>Vídeo Local</p>
+    <video width="600" controls autoplay>
+        <source src="./assets/video.mp4" type="">
+    </video>
+
+    <p>Video Externo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=eZpccIJBya1Kllsd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</html>
